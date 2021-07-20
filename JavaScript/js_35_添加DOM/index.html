@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="div1">
+<p id="p1">这是一段文字。</p>
+<p id="p2">这是另一段文字。</p>
+</div>
+
+<script>
+var para = document.createElement("p");
+var node = document.createTextNode("这是新的文本。");
+para.appendChild(node);
+
+var element = document.getElementById("div1");
+var child = document.getElementById("p1");
+element.insertBefore(para,child);
+</script>
+
+</body>
+</html>

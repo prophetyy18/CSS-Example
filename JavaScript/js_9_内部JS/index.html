@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <title>互动标签示例</title>
+    <style>
+      p {
+        width: 500px;
+        text-align: center;
+        border: 2px solid rgba(0, 0, 200, 0.6);
+        background: white;
+        color: green;
+        box-shadow: 1px 1px 2px rgba(0, 0, 200, 0.4);
+        border-radius: 10px;
+      }
+    </style>
+        <script>
+          const para = document.querySelector('p');
+          para.addEventListener('click', update);
+          function update() {
+            para.textContent ='春眠不觉晓，处处闻啼鸟。夜来风雨声，花落知多少。';
+          }
+        </script>
+  </head>
+  <body>
+    <p>春晓</p>
+  </body>
+</html>
