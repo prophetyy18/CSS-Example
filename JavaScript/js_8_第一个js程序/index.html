@@ -15,15 +15,16 @@
       }
     </style>
         <script>
+          window.onload=function(){
           const para = document.querySelector('p');
           para.addEventListener('click', update);
           function update() {
             para.textContent ='春眠不觉晓，处处闻啼鸟。夜来风雨声，花落知多少。';
           }
+                }
         </script>
   </head>
   <body>
     <p>春晓</p>
-
   </body>
 </html>
